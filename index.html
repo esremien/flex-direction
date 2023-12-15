@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Direction</title>
+  <body style="background-color: #FED9ED;"></body>
+  <!-- HINT:
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors
+  https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators 
+  -->
+  <style>
+    .container {
+      color: white;
+      border: 5px solid #461959;
+      display: inline-flex;
+      flex-direction: column;
+    }
+
+    .container > * {
+      flex-basis: 100px;
+      width: 250px;
+    }
+
+    * {
+      text-align: center;
+    }
+    /*
+Select all the elements that are the direct
+children of the .container class.
+    */
+
+    .one {
+      background-color: rgb(91, 8, 136);
+    }
+
+    .two {
+      background-color: rgb(113, 58, 190);
+    }
+
+    .three {
+      background-color: rgb(157, 118, 193);
+    }
+
+    .four {
+      background-color: rgb(229, 207, 247);
+    }
+
+    .five {
+      background-color: rgb(157, 118, 193);
+    }
+
+    .six {
+      background-color: rgb(113, 58, 190);
+    }
+
+    .seven {
+      background-color: rgb(91, 8, 136);
+    }
+
+    .text {
+      color: purple;
+      text-align: center;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1 class="text">Shades of Purple</h1>
+  <p class="text">i like purple so i'll serve you some purple shades^^</p>
+
+  <div class="container">
+    <div class="one">shade one</div>
+    <div class="two">shade two</div>
+    <div class="three">shade three</div>
+    <div class="four">shade four</div>
+    <div class="five">shade three</div>
+    <div class="six">shade two</div>
+    <div class="seven">shade one</div>
+  </div>
+</body>
+
+</html>
